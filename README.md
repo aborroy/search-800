@@ -2,7 +2,14 @@
 
 This project includes a default configuration to test [SEARCH-800](https://issues.alfresco.com/jira/browse/SEARCH-800) ticket.
 
-In `docker` folder, a Docker Compose template based in ACS 6.2.2 is patched with a modified `alfresco-repository-8.83.jar`. Additionally a sample project named `search-800-1.0.jar` is deployed in order to test the operation invoking the following Web Script:
+In `docker` folder, a Docker Compose template based in ACS 6.2.2 is patched with a modified `alfresco-repository-8.83.jar`.
+
+Configuration has been set to use only TRANSACTIONAL query consistency:
+```
+-Dsolr.query.fts.queryConsistency=TRANSACTIONAL
+```
+
+Additionally a sample project named `search-800-1.0.jar` is deployed in order to test the operation invoking the following Web Script:
 
 http://127.0.0.1:8080/alfresco/s/sample/helloworld
 

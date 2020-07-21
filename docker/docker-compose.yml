@@ -35,6 +35,8 @@ services:
                 -Dtika.url=http://transform-core-aio:8090/
                 -Dtransform.misc.url=http://transform-core-aio:8090/
 
+                -Dsolr.query.fts.queryConsistency=TRANSACTIONAL
+
                 -Dcsrf.filter.enabled=false
                 -Dalfresco.restApi.basicAuthScheme=true
                 -Xms1500m -Xmx1500m
