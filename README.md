@@ -18,3 +18,9 @@ http://127.0.0.1:8080/alfresco/s/sample/helloworld
 {47dd0ef6-84e8-4b27-a261-d6334af327c5=Space Templates, 3c2a9a5f-51bb-4a44-91ec-3a41ddac0e75=Published, 6cf597c1-bb7d-4d9c-bf0a-5c289516d746=Software Engineering Project, ...}
 ```
 * When using a released `alfresco-repository-8.83.jar`, an Exception is recovered when invoking this URL
+
+## Using Alfresco 5.2
+
+Test project for Alfresco 5.2 is provided in folder [search-800-52](search-800-52).
+
+Just need to build the project and deploy the JAR file (search-800-52-1.0-SNAPSHOT.jar) to `tomcat/webapps/alfresco/WEB-INF/lib` folder.
